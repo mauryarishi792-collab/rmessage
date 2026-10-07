@@ -33,7 +33,7 @@ if(fs.existsSync(publicDir)){
     });
 }
 
-app.listen(PORT,()=>{
+app.listen(PORT,"0.0.0.0",()=>{
     connectDB()
     console.log('Server start at http://localhost:',PORT)
 })
